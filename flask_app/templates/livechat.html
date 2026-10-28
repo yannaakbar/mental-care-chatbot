@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mental Care | Live Chat</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Livechat CSS -->
+  <link href="{{ url_for('static', filename='css/livechat.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar-custom">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="/" class="logo">Mental <span>Care</span></a>
+      <div class="d-flex align-items-center gap-3">
+        <span class="nav-status">
+          <span class="status-dot"></span> Chatbot Online
+        </span>
+        <a href="/" class="nav-back">
+          <i class="bi bi-arrow-left"></i>
+          <span class="d-none d-sm-inline">Kembali</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <div class="livechat-wrapper">
+    <div class="chat-container">
+
+      <!-- HEADER -->
+      <div class="chat-header">
+        <div class="bot-info">
+          <div class="bot-avatar">🤗</div>
+          <div>
+            <p class="bot-name">CareBot</p>
+            <p class="bot-status">
+              <span class="status-dot"></span>
+              Online — Siap membantu Anda
+            </p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="btn-header" id="btn-reset" title="Mulai percakapan baru">
+            <i class="bi bi-arrow-counterclockwise"></i>
+            <span class="d-none d-sm-inline">Reset</span>
+          </button>
+          <a href="/" class="btn-header">
+            <i class="bi bi-house"></i>
+            <span class="d-none d-sm-inline">Home</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MESSAGES -->
+      <div id="chat-messages" class="chat-messages">
+
+        <!-- Welcome Card -->
+        <div class="welcome-card">
+          <div class="welcome-icon">💙</div>
+          <h5>Halo! Saya CareBot</h5>
+          <p>Saya di sini untuk mendengarkan dan mendukung kesehatan mental Anda.<br>
+             Ceritakan apa yang sedang Anda rasakan.</p>
+        </div>
+
+        <!-- Pesan awal bot -->
+        <div class="message-wrapper bot">
+          <div class="message-avatar bot-avatar-sm">🤗</div>
+          <div class="message-content">
+            <div class="message-bubble bot-bubble">
+              Selamat datang di Mental Care! 😊 Saya CareBot, asisten kesehatan mental Anda.
+              Saya siap mendengarkan dan membantu Anda. Ada yang ingin Anda ceritakan hari ini?
+            </div>
+            <div class="message-meta">
+              <span>CareBot</span>
+              <span class="source-badge">AI Assistant</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- QUICK REPLIES -->
+      <div class="quick-replies" id="quick-replies">
+        <button class="quick-reply-btn" onclick="sendQuickReply('Saya merasa cemas hari ini')">
+          😰 Saya merasa cemas
+        </button>
+        <button class="quick-reply-btn" onclick="sendQuickReply('Saya sulit tidur belakangan ini')">
+          😴 Sulit tidur
+        </button>
+        <button class="quick-reply-btn" onclick="sendQuickReply('Saya merasa sedih dan kesepian')">
+          😢 Merasa sedih
+        </button>
+        <button class="quick-reply-btn" onclick="sendQuickReply('Bagaimana cara mengatasi stres?')">
+          💆 Tips mengatasi stres
+        </button>
+      </div>
+
+      <!-- INPUT AREA -->
+      <div class="chat-input-area">
+        <div class="input-wrapper">
+          <textarea
+            id="user-input"
+            placeholder="Ceritakan apa yang Anda rasakan..."
+            rows="1"
+            maxlength="500">
+          </textarea>
+          <span class="char-counter" id="char-counter">0/500</span>
+          <button id="send-btn" title="Kirim pesan">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </div>
+        <div class="input-footer">
+          <span class="input-hint">
+            <i class="bi bi-info-circle"></i>
+            Enter untuk kirim, Shift+Enter untuk baris baru
+            <br>Chatbot ini dibuat menggunakan model AI Seq2Seq Model
+          </span>
+          <span class="disclaimer"> 
+            Chatbot bisa membuat kesalahan kapan saja
+            <br>Bukan sebagai pengganti profesional
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer-custom">
+    &copy; 2024 <strong>Mental Care</strong> by
+    <a href="https://github.com/yannaakbar" target="_blank">Yannaakbar</a>.
+    Designed with 💙 for mental health awareness.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Livechat JS -->
+  <script src="{{ url_for('static', filename='js/livechat.js') }}"></script>
+
+</body>
+</html>

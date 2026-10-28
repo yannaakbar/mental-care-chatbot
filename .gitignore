@@ -1,0 +1,14 @@
+.env 
+.env.* 
+*.exe 
+*.old 
+__pycache__/ 
+*.pyc 
+model_backup/ 
+ngrok_qr.py 
+qr_chatbot.png 
+start_ngrok.bat 
+test_*.py 
+verify_model.py 
+run.py 
+"how --stat HEAD"

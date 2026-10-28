@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mental Care | Home</title>
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/icon.png') }}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="/">Mental Care</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#articles">Articles</a></li>
+          <li><a class="nav-link scrollto" href="#chatbot">Chatbot</a></li>
+          <li><a class="nav-link scrollto" href="#team">Creator</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8" data-aos="fade-right">
+          <h1>Selamat Datang di <span>Mental Care</span></h1>
+          <h2>Platform Informasi & Dukungan Kesehatan Mental</h2>
+          <p>Kami hadir untuk memberikan informasi, edukasi, dan dukungan terkait kesehatan mental. Jangan ragu untuk berbagi dan mencari bantuan.</p>
+          <div class="hero-buttons">
+            <a href="/livechat" class="btn-get-started">
+              <i class="bi bi-chat-heart-fill"></i> Mulai Live Chat
+            </a>
+            <a href="#about" class="btn-learn-more scrollto">
+              <i class="bi bi-arrow-down-circle"></i> Pelajari Lebih
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="content">
+              <h3>Mengapa Kesehatan Mental Itu Penting?</h3>
+              <p>Kesehatan mental adalah komponen penting dalam setiap jenjang kehidupan manusia. Kondisi mental pada anak dapat memengaruhi perkembangan kejiwaannya hingga dewasa.</p>
+              <p>Dengan memiliki mental yang sehat, seseorang dapat merasakan berbagai manfaat dalam menjalankan kehidupan sehari-hari.</p>
+              <a href="/livechat" class="btn-get-started mt-3">
+                <i class="bi bi-chat-dots"></i> Konsultasi Sekarang
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="fas fa-notes-medical"></i>
+                    <h4>Penyebab Gangguan Kesehatan Mental</h4>
+                    <p>Belum diketahui secara pasti penyebabnya, namun terkait faktor biologis, psikologis, dan zat psikotropika.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="fas fa-hospital-user"></i>
+                    <h4>Perawatan Gangguan Kesehatan Mental</h4>
+                    <p>Perawatan meliputi terapi perilaku kognitif, terapi interpersonal, terapi perilaku dialektis, dan obat-obatan.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4>Gangguan Kesehatan Mental Itu Apa?</h4>
+                    <p>Istilah yang mengacu pada kondisi yang memengaruhi pikiran, perasaan, suasana hati, atau perilaku seseorang.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Articles Section ======= -->
+    <section id="articles" class="departments">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Jenis-Jenis Gangguan Mental</h2>
+          <p>Gangguan mental bisa menyerang siapa saja. Berikut beberapa jenis yang umum dikenal:</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3" data-aos="fade-right">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Bipolar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Depresi Mayor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">OCD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Skizofrenia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Anxiety Disorder</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9" data-aos="fade-left">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Bipolar</h3>
+                    <p class="fst-italic">Gangguan bipolar adalah kondisi kesehatan mental yang ditandai dengan perubahan suasana hati yang ekstrem.</p>
+                    <p>Penderita bipolar mengalami episode mania (suasana hati yang sangat tinggi) dan episode depresi (suasana hati yang sangat rendah) secara bergantian.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/bipolar.jpg') }}" alt="Bipolar" class="img-fluid rounded">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Depresi Mayor</h3>
+                    <p class="fst-italic">Depresi mayor adalah gangguan suasana hati yang menyebabkan perasaan sedih yang terus-menerus.</p>
+                    <p>Kondisi ini memengaruhi cara seseorang merasa, berpikir, dan menangani aktivitas sehari-hari seperti tidur, makan, atau bekerja.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/depresi.jpg') }}" alt="Depresi" class="img-fluid rounded">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Obsessive-Compulsive Disorder</h3>
+                    <p class="fst-italic">OCD adalah gangguan mental yang membuat penderita melakukan sesuatu secara berlebihan.</p>
+                    <p>Penderita OCD sadar akan keinginannya namun tidak bisa menghentikannya dengan mudah. Mereka akan melakukan hal tersebut berulang kali agar pikirannya lebih tenang.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/OCD.jpg') }}" alt="OCD" class="img-fluid rounded">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Skizofrenia</h3>
+                    <p class="fst-italic">Berdasarkan data WHO, ada lebih dari 20 juta orang di seluruh dunia menderita skizofrenia.</p>
+                    <p>Skizofrenia adalah gangguan mental yang menimbulkan halusinasi, delusi, serta kekacauan berpikir dan berperilaku.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/Skizofrenia.jpg') }}" alt="Skizofrenia" class="img-fluid rounded">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Gangguan Kecemasan (Anxiety Disorder)</h3>
+                    <p class="fst-italic">Anxiety disorder adalah gangguan mental yang ditandai dengan ketakutan dan kecemasan yang tidak wajar.</p>
+                    <p>Gejala meliputi merasa gelisah terus menerus, mudah lelah, sulit berkonsentrasi, mudah tersinggung, dan mengalami gangguan tidur.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static', filename='img/anxiety.jpeg') }}" alt="Anxiety" class="img-fluid rounded">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Chatbot Section ======= -->
+    <section id="chatbot" class="services">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Livechat — Chatbot Kesehatan Mental</h2>
+          <p>Kami membuat fitur chatbot untuk membantu Anda mendapatkan informasi dan dukungan terkait kesehatan mental.<br>Yuk, ngobrol langsung dengan CareBot!</p>
+        </div>
+        <div class="row justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-6">
+            <div class="chatbot-card text-center">
+              <div class="chatbot-icon">🤗</div>
+              <h4>CareBot</h4>
+              <p>Asisten kesehatan mental berbasis AI yang siap mendengarkan dan memberikan dukungan 24/7.</p>
+              <a href="/livechat" class="btn-livechat">
+                <i class="bi bi-chat-heart-fill"></i> Mulai Chat Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="doctors">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Creator</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+              <div class="pic">
+                <img src="{{ url_for('static', filename='img/team/Yana-1.jpg') }}" class="img-fluid" alt="Yana">
+              </div>
+              <div class="member-info">
+                <h4>Aa Yana Maulana Akbar</h4>
+                <span><strong>Universitas Kuningan</strong></span>
+                <p>SI 2019 A — 20190910055</p>
+                <p>Aplikasi Web-Based ini dibuat untuk Tugas Akhir Skripsi</p>
+                <div class="social">
+                  <a href="https://itsyannaakbar.000webhostapp.com/" target="_blank"><i class="bi bi-link"></i></a>
+                  <a href="https://github.com/yannaakbar" target="_blank"><i class="bi bi-github"></i></a>
+                  <a href="https://instagram.com/yannaakbar" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/yana-maulana-akbar-58bb581a2" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Yannaakbar</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> |
+        Modified by <a href="https://github.com/yannaakbar">Yannaakbar</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
